@@ -2,7 +2,7 @@
 <ol>
   <li>Создать виртуальную машину</li>
   <li>Создать пул из двух дисков в режиме RAID 1</li>
-  <li>Добавить разные алгоритмы сжатия в каждую файловую систему</li>
+  <li></li>
   <li></li>
   <li></li>
   <li></li>
@@ -33,6 +33,10 @@
  <p>Алгоритм gzip: zfs set compression=gzip-9 otus3
  <p>Алгоритм zle: zfs set compression=zle otus4
  <li>Проверил, что все файловые системы имеют разные методы сжатия</li>
- <p>zfs get all | grep compression  
+ <p>zfs get all | grep compression
+ <li>Скачал один и тотже файл во все пулы командой</li>
+ <p> do wget -P /otus$i https://gutenberg.org/cache/epub/2600/pg2600.converter.log; done
+ <li>Проверил скачивание командой</li>
+ <p>ls -l /otus*  
  </ul>
 
