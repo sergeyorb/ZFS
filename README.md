@@ -58,6 +58,10 @@ xport=download
 <ul>
 <li>Скачал файл</li>
 <p>wget -O otus_task2.file --no-check-certificate https://drive.google.com/u/0/uc?id=1gH8gCL9y7Nd5Ti3IRmplZPF1XjzxeRAG&export=download
-
-<li></li>  
+<li>Востановил файловую систему из снапшота</li>
+<p>zfs receive otus/test@today < otus_task2.file  
+<li>Нашёл в каталоге /otus/test файл с именем “secret_message”</li>
+<li>Открыл содержимое файла</li>
+<p>cat /otus/test/task1/file_mess/secret_message
+<p>https://github.com/sindresorhus/awesome  
 </ul>
