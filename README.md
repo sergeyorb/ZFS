@@ -3,11 +3,7 @@
   <li>Создать виртуальную машину</li>
   <li>Создать пул из двух дисков в режиме RAID 1</li>
   <li>Настраиваем пул</li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Работа со снапшотом, поиск сообщения от преподователя</li>
 </ol>
 
 
@@ -44,4 +40,24 @@
  </ul>
  
  # 3.Настраиваем пул
+<ul>
+<li>Скачал архив в домашний каталог</li>
+<p>wget -O archive.tar.gz --no-check-certificate https://drive.google.com/u/0/uc?id=1KRBNW33QWqbvbVHa3hLJivOAt60yukkg&e
+xport=download  
+<li>Распаковал архив командой</li>
+<p>tar -xzvf archive.tar.gz   
+<li>Проверил, возможно ли импортировать данный каталог в пул</li>
+<p>zpool import -d zpoolexport/  
+<li>Сделал импорт пула в ОС командой</li>
+<p>zpool import -d zpoolexport/ otus  
+<li>Запросил параметры пула командой</li>
+<p>zpool get all otus    
+</ul>
 
+# 4.Работа со снапшотом, поиск сообщения от преподователя
+<ul>
+<li>Скачал файл</li>
+<p>wget -O otus_task2.file --no-check-certificate https://drive.google.com/u/0/uc?id=1gH8gCL9y7Nd5Ti3IRmplZPF1XjzxeRAG&export=download
+
+<li></li>  
+</ul>
